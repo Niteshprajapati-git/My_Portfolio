@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main >
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <button class="avatar-box profile-photo-button" type="button" aria-label="View profile photo" data-profile-photo-open>
+          <img src="./assets/images/np2.JPG" alt="Nitesh Prajapati" width="80">
+        </button>
+
+        <div class="info-content">
+          <h1 class="name" title="Nitesh Prajapati">Nitesh Prajapati</h1>
+
+          <p class="title">Desktop Support Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <div class="contact-value-row">
+                <a href="mailto:niteshhh.prajapati@gmail.com" class="contact-link">niteshhh.prajapati@gmail.com</a>
+                <button class="copy-contact-btn" type="button" data-copy-value="niteshhh.prajapati@gmail.com" data-copy-label="Email" aria-label="Copy email address" title="Copy email address">
+                  <ion-icon name="copy-outline"></ion-icon>
+                </button>
+              </div>
+              <span class="copy-contact-status" aria-live="polite"></span>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <div class="contact-value-row">
+                <a href="tel:+8600634453" class="contact-link">+91 8600634453</a>
+                <button class="copy-contact-btn" type="button" data-copy-value="+91 8600634453" data-copy-label="Phone number" aria-label="Copy phone number" title="Copy phone number">
+                  <ion-icon name="copy-outline"></ion-icon>
+                </button>
+              </div>
+              <span class="copy-contact-status" aria-live="polite"></span>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title"> Date Of Birth</p>
+
+              <time datetime="1982-06-23">17 March, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Mumbai, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/nitesh-prajapati-7b2064309/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Niteshprajapati-git" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/nitesxhh?igsh=OGh0NGo5ZGlxZTF5" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <div class="profile-photo-modal" data-profile-photo-modal>
+      <div class="profile-photo-backdrop" data-profile-photo-close></div>
+      <div class="profile-photo-viewer" role="dialog" aria-modal="true" aria-label="Profile photo">
+        <button class="profile-photo-close" type="button" aria-label="Close profile photo" data-profile-photo-close>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <img src="./assets/images/np2.JPG" alt="Nitesh Prajapati profile photo" data-profile-photo-large>
+      </div>
+    </div>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+           Desktop Support Engineer with 1.5+ years of experience delivering end-to-end IT support across Windows and macOS environments. Skilled in Active Directory, Microsoft 365, networking, VPN management, remote troubleshooting, and L2 support. Experienced in incident resolution, root-cause analysis, and system administration, with a strong focus on improving operational efficiency through process optimization, knowledge management, SQL, and Power BI.
+          </p>
+
+          <p>
+           Alongside IT support, I have hands-on experience in web development and data analytics, utilizing React, SQL, and Power BI. Developed and deployed a React-based chatbot while creating data-driven insights through interactive dashboards and reporting.
+
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">End-User & Desktop Support</h4>
+
+                <p class="service-item-text">
+                 Deliver reliable technical support across Windows and macOS environments, ensuring seamless user experiences and rapid issue resolution.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Network & Connectivity Support</h4>
+
+                <p class="service-item-text">
+                  Support LAN/WAN, VPN, and enterprise connectivity services to maintain secure and uninterrupted business operations.
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt=" Data Analysis icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">IT Infrastructure & Systems Administration</h4>
+
+                <p class="service-item-text">
+                  Manage Active Directory, Microsoft 365, user access, device provisioning, software deployment, and endpoint management.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="problem-solving" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Advanced Technical Troubleshooting</h4>
+
+                <p class="service-item-text">
+                 Diagnose and resolve complex issues related to operating systems, networking, VPN connectivity, email platforms, printers, and enterprise applications.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Lavlesh Mondal" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Anudeep Karkala</h4>
+
+                <time class="testimonial-date" datetime="2026-09-10" data-testimonials-date>10 September, 2026</time>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                   Working with Nitesh has been a great experience. His knowledge of networking, VPN connectivity, and system troubleshooting helps ensure smooth business operations. He approaches every challenge with professionalism and a solution-oriented mindset.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Sumedha Sawant" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Muskan Chauhan </h4>
+
+                <time class="testimonial-date" datetime="2026-04-05" data-testimonials-date>5 April, 2026</time>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Nitesh is a highly skilled Desktop Support Engineer who consistently delivers reliable technical solutions. His expertise in Windows, macOS, Microsoft 365, and troubleshooting ensures issues are resolved quickly and efficiently.
+                    
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Amar Chaudhary" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Vidyadhar Shenewad</h4>
+
+                <time class="testimonial-date" datetime="2026-06-18" data-testimonials-date>18 June, 2026</time>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Nitesh consistently demonstrates strong problem-solving abilities and technical expertise. His experience with Active Directory, user management, hardware support, and incident resolution allows him to deliver reliable and effective IT solutions.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Jitu Sha" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jitu Sha</h4>
+
+                <time class="testimonial-date" datetime="2026-03-26" data-testimonials-date>26 March, 2026</time>
+                
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Nitesh combines excellent technical support skills with analytical thinking. Alongside resolving complex IT issues, he leverages SQL and Power BI to transform data into meaningful insights that support better decision-making and operational improvements.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Lavlesh Mondal" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Lavlesh Mondal</h4>
+
+              <time data-modal-date></time>
+
+              <div data-modal-text>
+                <p>
+                  Nitesh is a highly skilled and dedicated developer. His ability to build fast, responsive, and user-friendly websites is truly impressive. He has a great understanding of both front-end and back-end development, ensuring seamless performance across different devices.
+
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Certificates</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://drive.google.com/file/d/1XMhrEadcCMCGrvLfyGIzzPkChjh_ULgQ/view?usp=sharing">
+                <img src="./assets/images/Udemy-Logo4.PNG" alt="Certificate logo">
+              </a>
+              
+            </li>
+
+            <li class="clients-item">
+              <a href="https://drive.google.com/file/d/1giBaTAQqy3t0C394SNFm-IXI6yDW628U/view?usp=sharing">
+                <img src="./assets/images/greatlearning logo.svg" alt="Certificate logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://drive.google.com/file/d/1WrKfaCIDlBIUWDcJZyEbVIUWcCSvWYON/view?usp=sharing">
+                <img src="./assets/images/typing-icon1.jpg" alt="Certificate logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://drive.google.com/file/d/1kA8idP4nYTWSbcYEErct9Q-K45DWxozg/view?usp=sharing">
+                <img src="./assets/images/linkdin learning logo.png" alt="Certificate logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://drive.google.com/file/d/1FEpnUoMB1sbEIZCOldIqtKGM9nJf2nWB/view?usp=sharing">
+                <img src="./assets/images/Udemy-Logo4.PNG" alt="Certificate logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/microsoft learning logo.png" alt="Certificate logo">
+              </a>
+             
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Master of Science in Information Technology (M.Sc. IT)  </h4>
+                 <span> <strong> University of Mumbai </strong> </span>
+
+              <span>07/2024 — 03/2026</span>
+
+              <p class="timeline-text">
+               Completed Post Graduation in Information Technology (M.Sc. IT) with a CGPI of 8.27/10, building advanced expertise in software development, networking, cybersecurity, and IT infrastructure.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bachelor of Science in Computer Science (B.Sc. IT) </h4>
+              <span> <strong> University of Mumbai – Affiliated with Vaskar Rao Waman Thakur College </strong> </span>
+
+              <span>06/2021 — 04/2024</span>
+
+              <p class="timeline-text">
+               Completed Bachelor of Science in Information Technology (B.Sc. IT) with a CGPI of 7.58/10, building expertise in web development, software engineering, and information systems. Strengthened technical proficiency, analytical thinking, and problem-solving capabilities through academic projects and practical implementation of modern technologies.
+              </p>
+
+            </li>
+
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Desktop Support Engineer / L2 Support Engineer</h4>
+              <span> <strong> Outworks Solutions Private Ltd ( Client: Wipro Limited – Axis Bank) </strong> </span>
+
+
+              <span>04/2025 — Present </span>
+
+              <p class="timeline-text">
+                Delivered comprehensive IT support across Windows and Mac environments, resolving 150+ issues monthly and improving customer satisfaction by 25%. Provided advanced troubleshooting for Windows 10/11, macOS, Office 365, Outlook, LAN/WAN, VPN, and printers while ensuring seamless business operations. Managed Active Directory accounts, user access, onboarding processes, device inventory, and software installations. Developed a knowledge-driven ticketing system that improved solution retrieval speed by 30% and collaborated with IT teams to reduce downtime by 20%. Served as an L2 escalation specialist, performing root-cause analysis and implementing permanent solutions to enhance infrastructure reliability and service delivery.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">IT Support Intern</h4>
+              <span> <strong> Vishnu Waman Thakur Charitable Trust </strong> </span>
+
+              <span>02/2024 — 05/2024 </span>
+
+              <p class="timeline-text">
+                Assisted with system maintenance, hardware troubleshooting, software installation, and network connectivity support in Windows environments. Collaborated with users and internal teams to resolve technical issues, improve system reliability, and enhance operational efficiency while developing strong communication, problem-solving, and customer support skills.
+              </p>
+
+            </li>
+
+          
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Technical Skills</h5>
+                <data value="80">90%</data>
+              </div>
+
+              <p class="skill-description">
+               Desktop Support (L1/L2), Windows 10/11, macOS, Active Directory, Microsoft 365, Outlook, Hardware & Software Troubleshooting, LAN/WAN, VPN, Printer Support, Remote Support, Software Installation, Device Inventory Management, Root Cause Analysis, Ticketing Systems
+              </p>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Data Analytics</h5>
+                <data value="70">80%</data>
+              </div>
+
+              <p class="skill-description">
+                Used SQL to query and analyze structured data, including sales trends and customer ordering patterns.
+Created Power BI dashboards to present key metrics and support data-driven decisions.
+              </p>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">AWS Cloud Practitioner</h5>
+                <data value="65">75%</data>
+              </div>
+
+              <p class="skill-description">
+                Earned the Ultimate AWS Certified Cloud Practitioner certificate, covering AWS services, cloud concepts, security, and architecture.
+Built foundational knowledge of AWS and cloud computing principles.
+              </p>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Technology Adaptability</h5>
+                <data value="50">80%</data>
+              </div>
+
+              <p class="skill-description">
+                Quick to learn and adapt to new technologies, software, and IT tools.
+Able to apply new knowledge to support users and resolve technical issues.
+              </p>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="project-list">
+
+            <li class="project-item"
+                data-title="AI-Powered Chatbot for Customer Interaction"
+                data-description="AI-powered chatbot is an interactive web-based solution designed to enhance user engagement by providing real-time responses and assistance. The chatbot utilizes front-end and back-end technologies to deliver a seamless conversational experience."
+                data-duration="2025 - Present"
+                data-tools="React, JavaScript, Node.js, Express, Gemini API"
+                data-responsibilities="Developed a responsive UI with React, JavaScript, HTML, and CSS. |
+                Integrated Gemini API for intelligent conversational capabilities.|
+                Built server-side logic using Node.js and Express.|
+                Conducted testing & debugging for optimal performance.|
+                Deployed and maintained the chatbot for scalability and uptime."
+                data-source-link="https://github.com/Niteshprajapati-git/chatbot2.0"
+                data-live-link="https://niteshprajapati-git.github.io/chatbot2.0/">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/chatbot.png" alt="chatbot" loading="lazy">
+                </figure>
+                <h3 class="project-title">Chatbot</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!-- 
+      portfolio-project-models
+       -->
+      <div class="portfolio-modal-container" data-portfolio-modal-container>
+        <div class="overlay" data-overlay></div>
+      
+        <section class="portfolio-modal">
+          <button class="modal-close-btn" data-portfolio-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+      
+          <div class="modal-content">
+            <h3 class="h3 modal-title" data-portfolio-modal-title>Project Title</h3>
+            <p class="modal-duration" data-portfolio-modal-duration><strong>Duration:</strong> March 2024 - Present</p>
+            <p class="modal-tools" data-portfolio-modal-tools><strong>Tools:</strong> React, JavaScript, Node.js, Express</p>
+            <p class="modal-description" data-portfolio-modal-description>
+              Detailed information about the project will appear here.
+            </p>
+            <h4 class="modal-responsibilities-title">Responsibilities:</h4>
+            <ul class="modal-responsibilities" data-portfolio-modal-responsibilities>
+              <!-- Responsibilities will be dynamically added here -->
+            </ul>
+            <a href="#" class="modal-source-link" data-portfolio-modal-source-link target="_blank">View Source Code</a>
+            <a href="#" class="modal-live-link" data-portfolio-modal-link target="_blank">View Live Project</a>
+          </div>
+        </section>
+      </div>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#" data-blog-item>
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/ad1.jpeg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Active Directory</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026-01-15">15 January, 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title"> Mastering Active Directory for Efficient User Management</h3>
+
+                  <p class="blog-text">
+                    Learn how Active Directory helps organizations manage users, permissions, and security while streamlining onboarding and access management processes.
+                  </p>
+
+                </div>
+
+              </a>
+              <template data-blog-details>
+                <p>
+                  Active Directory is a critical component of enterprise IT infrastructure, enabling organizations to manage users, computers, groups, and security policies from a centralized platform. As a Desktop Support Engineer, I regularly use Active Directory to create user accounts, reset passwords, manage permissions, and support onboarding and offboarding processes.
+                </p>
+                <p>
+                  Effective Active Directory administration improves security, streamlines user access management, and ensures compliance with organizational policies. Understanding its core functionalities is essential for IT professionals responsible for supporting enterprise environments.
+                </p>
+                <h4>Key Areas Covered</h4>
+                <ul>
+                  <li>User and Group Management</li>
+                  <li>Password Reset and Account Unlocking</li>
+                  <li>Access Permission Management</li>
+                  <li>Group Policy Administration</li>
+                  <li>Onboarding and Offboarding Support</li>
+                </ul>
+                <section class="ad-roadmap" aria-labelledby="ad-roadmap-title">
+                  <h4 id="ad-roadmap-title">Active Directory Learning Roadmap</h4>
+                  <ol class="ad-roadmap-list">
+                    <li class="ad-roadmap-step">
+                      <h5>Understand the foundations</h5>
+                      <p>Learn domains, forests, domain controllers, and how centralized identity management works.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>Explore users, computers, and groups</h5>
+                      <p>Practice navigating Organizational Units and managing accounts, devices, and security groups.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>Manage access and account lifecycle</h5>
+                      <p>Work through password resets, account unlocks, permissions, and onboarding or offboarding tasks.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>Apply Group Policy</h5>
+                      <p>Understand how Group Policy Objects configure user and computer settings across an organization.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>Build secure administration habits</h5>
+                      <p>Follow least-privilege practices, document changes, and review access to support secure operations.</p>
+                    </li>
+                  </ol>
+                </section>
+                <h4>Skills Demonstrated</h4>
+                <p><strong>Active Directory | User Management | Access Control | Group Policy | Identity Management | IT Administration | Security Management | Enterprise Support</strong></p>
+              </template>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#" data-blog-item>
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/trouble.jpeg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Desktop Support-IT Troubleshooting</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">12 March 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Essential Troubleshooting Techniques for Desktop Support Engineers</h3>
+
+                  <p class="blog-text">
+                    Explore practical approaches to diagnosing and resolving hardware, software, networking, and operating system issues in enterprise environments.
+                  </p>
+
+                </div>
+
+              </a>
+
+              <template data-blog-details>
+                <p>
+                  Desktop Support Engineers are the first line of defense when technical issues disrupt productivity. From operating system errors and hardware failures to software conflicts and network connectivity problems, effective troubleshooting requires a structured approach to quickly identify root causes and restore normal operations.
+                </p>
+                <p>
+                  A strong troubleshooting methodology not only reduces downtime but also enhances user satisfaction and business continuity. By following proven diagnostic techniques, IT professionals can resolve issues efficiently while preventing recurring incidents.
+                </p>
+                <h4>Key Areas Covered</h4>
+                <ul>
+                  <li>Hardware Diagnostics & Maintenance</li>
+                  <li>Windows & macOS Troubleshooting</li>
+                  <li>Application & Software Support</li>
+                  <li>Network & Connectivity Issues</li>
+                  <li>Printer & Peripheral Support</li>
+                  <li>Remote Assistance & Incident Resolution</li>
+                </ul>
+                <section class="ad-roadmap" aria-labelledby="ad-roadmap-title">
+                  <h4 id="ad-roadmap-title">Troubleshooting Roadmap</h4>
+                  <ol class="ad-roadmap-list">
+                    <li class="ad-roadmap-step">
+                      <h5>Identify the Problem</h5>
+                      <p>Gather information from the user, understand the impact, and reproduce the issue whenever possible.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>Establish a Theory</h5>
+                      <p>Analyze symptoms, review logs, and determine potential causes based on technical evidence.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>Test Potential Solutions</h5>
+                      <p>Apply fixes systematically while documenting actions taken and their outcomes.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>Verify System Functionality</h5>
+                      <p>Confirm that the issue is resolved and validate that related services are functioning correctly.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>Document the Resolution</h5>
+                      <p>Record troubleshooting steps, solutions, and lessons learned for future reference.</p>
+                    </li>
+                  </ol>
+                </section>
+                <h4>Skills Demonstrated</h4>
+                <p><strong>Technical Troubleshooting | Windows 10/11 | macOS | Microsoft 365 | Outlook | Networking | VPN Support | Remote Assistance | Incident Management | Problem Solving</strong></p>
+              </template>
+
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#" data-blog-item>
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/vpn.jpeg" alt="VPN and network connectivity support" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Networking • VPN Support • IT Infrastructure</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026-05-28">28 May, 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Common VPN and Network Connectivity Issues and How to Resolve Them</h3>
+
+                  <p class="blog-text">
+                   A guide to identifying, troubleshooting, and resolving VPN, LAN/WAN, and connectivity problems to maintain seamless business operations.
+
+                  </p>
+
+                </div>
+
+              </a>
+              <template data-blog-details>
+                <p>
+                  In today's connected workplace, reliable network access is essential for productivity and collaboration. However, issues such as VPN connection failures, DNS misconfigurations, IP conflicts, and unstable Wi-Fi connections can disrupt business operations and impact end-user experience.
+                </p>
+                <p>
+                  As a Desktop Support Engineer, troubleshooting network and connectivity issues requires a structured approach to quickly identify root causes and restore secure access to corporate resources. Understanding networking fundamentals and diagnostic tools is key to maintaining seamless communication across enterprise environments.
+                </p>
+                <h4>Key Areas Covered</h4>
+                <ul>
+                  <li>VPN Connectivity Troubleshooting</li>
+                  <li>LAN/WAN Network Diagnostics</li>
+                  <li>DNS &amp; IP Configuration Issues</li>
+                  <li>Wi-Fi &amp; Internet Connectivity Problems</li>
+                  <li>Remote Access Support</li>
+                  <li>Network Performance Optimization</li>
+                </ul>
+                <section class="ad-roadmap" aria-labelledby="vpn-roadmap-title">
+                  <h4 id="vpn-roadmap-title">Network Troubleshooting Roadmap</h4>
+                  <ol class="ad-roadmap-list">
+                    <li class="ad-roadmap-step">
+                      <h5>Identify the Connectivity Issue</h5>
+                      <p>Determine whether the problem is related to VPN, internet access, DNS resolution, wireless connectivity, or network hardware.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>Verify Network Configuration</h5>
+                      <p>Review IP addresses, subnet masks, default gateways, and DNS settings to ensure proper configuration.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>Test Basic Connectivity</h5>
+                      <p>Use tools such as Ping, Tracert, and Network Diagnostics to identify communication failures.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>Troubleshoot VPN Access</h5>
+                      <p>Check authentication credentials, VPN client settings, security certificates, and network restrictions.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>Analyze Network Performance</h5>
+                      <p>Monitor latency, packet loss, bandwidth utilization, and connection stability to identify performance bottlenecks.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>Implement Permanent Solutions</h5>
+                      <p>Document findings, apply corrective actions, and recommend preventive measures to minimize recurring issues.</p>
+                    </li>
+                  </ol>
+                </section>
+                <h4>Common Issues Resolved</h4>
+                <ul>
+                  <li>VPN Connection Failures</li>
+                  <li>DNS Resolution Errors</li>
+                  <li>IP Address Conflicts</li>
+                  <li>Wi-Fi Connectivity Problems</li>
+                  <li>Slow Network Performance</li>
+                  <li>Gateway &amp; Routing Issues</li>
+                  <li>Remote Access Challenges</li>
+                  <li>Internet Connectivity Interruptions</li>
+                </ul>
+                <h4>Skills Demonstrated</h4>
+                <p><strong>Networking | VPN Support | LAN/WAN | DNS | TCP/IP | Remote Connectivity | Network Diagnostics | Problem Solving | IT Infrastructure | Technical Support</strong></p>
+              </template>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#" data-blog-item>
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/ms.jpeg" alt="Microsoft 365 administration" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Microsoft 365 • Enterprise Support • Cloud Administration</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026-07-18">18 July, 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Microsoft 365 Administration: Best Practices for IT Support Professionals</h3>
+
+                  <p class="blog-text">
+                    Discover effective strategies for managing Microsoft 365 services, user accounts, Outlook issues, and productivity tools in modern workplaces.
+
+                  </p>
+
+                </div>
+
+              </a>
+              <template data-blog-details>
+                <p>
+                  Microsoft 365 has become a cornerstone of modern workplace productivity, enabling seamless communication, collaboration, and secure access to business resources. For IT Support professionals, effective administration of Microsoft 365 is essential to maintaining operational efficiency and delivering a smooth user experience.
+                </p>
+                <p>
+                  As a Desktop Support Engineer, I regularly assist users with Outlook issues, account management, license assignments, password resets, and Microsoft 365 service troubleshooting. Understanding administrative best practices helps reduce support tickets, enhance security, and improve overall user productivity.
+                </p>
+                <h4>Key Areas Covered</h4>
+                <ul>
+                  <li>User &amp; License Management</li>
+                  <li>Outlook &amp; Exchange Online Support</li>
+                  <li>Password Reset &amp; Account Recovery</li>
+                  <li>Microsoft Teams Administration</li>
+                  <li>Security &amp; Compliance Fundamentals</li>
+                  <li>Troubleshooting Microsoft 365 Services</li>
+                </ul>
+                <section class="ad-roadmap" aria-labelledby="m365-roadmap-title">
+                  <h4 id="m365-roadmap-title">Microsoft 365 Learning Roadmap</h4>
+                  <ol class="ad-roadmap-list">
+                    <li class="ad-roadmap-step">
+                      <h5>Understand Microsoft 365 Fundamentals</h5>
+                      <p>Learn the core services including Outlook, Teams, OneDrive, SharePoint, and Exchange Online.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>Manage Users and Licenses</h5>
+                      <p>Create accounts, assign licenses, configure user settings, and manage access permissions.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>Support Email and Collaboration Services</h5>
+                      <p>Troubleshoot Outlook synchronization issues, mailbox access, Teams connectivity, and collaboration tools.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>Implement Security Best Practices</h5>
+                      <p>Configure Multi-Factor Authentication (MFA), password policies, and secure access controls.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>Monitor and Resolve Service Issues</h5>
+                      <p>Use the Microsoft 365 Admin Center to identify service health issues and resolve user-reported incidents.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>Optimize Productivity and Compliance</h5>
+                      <p>Help users make effective use of Microsoft 365 tools while following organizational security and compliance requirements.</p>
+                    </li>
+                  </ol>
+                </section>
+                <h4>Why Microsoft 365 Matters</h4>
+                <p>
+                  Microsoft 365 simplifies workplace collaboration by integrating email, communication, file sharing, and cloud services into a single platform. Successful administration enhances productivity, strengthens security, and ensures reliable access to business-critical resources.
+                </p>
+                <h4>Skills Demonstrated</h4>
+                <p><strong>Microsoft 365 Administration | Outlook Support | Exchange Online | Microsoft Teams | User Management | License Administration | Security Management | Enterprise IT Support</strong></p>
+                <h4>Career Relevance</h4>
+                <p><strong>Desktop Support Engineer → L2 Support Engineer → Microsoft 365 Administrator → System Administrator → Cloud Administrator</strong></p>
+                <p>
+                  Mastering Microsoft 365 administration equips IT professionals with the skills needed to support modern cloud-based workplaces, manage enterprise services efficiently, and progress toward advanced administration and cloud-focused roles.
+                </p>
+              </template>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#" data-blog-item>
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/data.jpeg" alt="Data analytics with SQL and Power BI" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Data Analytics • Business Intelligence • Power BI</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026-09-05">05 September, 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Turning Data into Insights with SQL and Power BI</h3>
+
+                  <p class="blog-text">
+                    Learn how SQL and Power BI can be used to analyze data, build interactive dashboards, and support data-driven decision-making.
+                  </p>
+
+                </div>
+
+              </a>
+              <template data-blog-details>
+                <p>
+                  In today's data-driven world, organizations rely on accurate insights to make informed business decisions. SQL and Power BI provide powerful tools for collecting, analyzing, and visualizing data, enabling businesses to identify trends, monitor performance, and uncover opportunities for growth.
+                </p>
+                <p>
+                  Through hands-on projects and continuous learning, I have developed practical experience in querying databases with SQL, transforming raw datasets, and creating interactive Power BI dashboards. By turning complex data into meaningful visual reports, businesses can make smarter decisions, improve operational efficiency, and achieve strategic objectives.
+                </p>
+                <h4>Key Areas Covered</h4>
+                <ul>
+                  <li>Data Collection &amp; Preparation</li>
+                  <li>SQL Query Development &amp; Optimization</li>
+                  <li>Data Cleaning &amp; Transformation</li>
+                  <li>Interactive Dashboard Creation</li>
+                  <li>KPI &amp; Performance Monitoring</li>
+                  <li>Business Intelligence Reporting</li>
+                </ul>
+                <section class="ad-roadmap" aria-labelledby="data-roadmap-title">
+                  <h4 id="data-roadmap-title">Data Analytics Roadmap</h4>
+                  <ol class="ad-roadmap-list">
+                    <li class="ad-roadmap-step">
+                      <h5>Data Fundamentals</h5>
+                      <p>Understand databases, data types, relationships, and business metrics.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>SQL for Data Analysis</h5>
+                      <p>Master filtering, sorting, joins, aggregations, subqueries, and performance optimization.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>Data Cleaning &amp; Transformation</h5>
+                      <p>Prepare raw datasets by handling missing values, duplicates, and inconsistencies.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>Power BI Dashboard Development</h5>
+                      <p>Build interactive reports, charts, KPIs, and visual representations of business data.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>Insight Generation</h5>
+                      <p>Analyze patterns, customer behavior, operational trends, and performance indicators.</p>
+                    </li>
+                    <li class="ad-roadmap-step">
+                      <h5>Business Decision Making</h5>
+                      <p>Present actionable insights through effective storytelling and visual reporting.</p>
+                    </li>
+                  </ol>
+                </section>
+                <h4>Real-World Applications</h4>
+                <ul>
+                  <li>Sales Performance Analysis</li>
+                  <li>Customer Behavior Tracking</li>
+                  <li>Operational Efficiency Monitoring</li>
+                  <li>Service Desk &amp; IT Ticket Analysis</li>
+                  <li>Business KPI Reporting</li>
+                  <li>Trend &amp; Forecast Analysis</li>
+                </ul>
+                <h4>Why SQL &amp; Power BI Matter</h4>
+                <p>
+                  Data has little value unless it can be transformed into actionable information. SQL enables efficient data extraction and management, while Power BI converts complex datasets into intuitive dashboards, helping organizations make faster and more informed decisions.
+                </p>
+                <h4>Skills Demonstrated</h4>
+                <p><strong>SQL | Power BI | Data Analysis | Data Visualization | Dashboard Development | Business Intelligence | Data Modeling | Reporting | Problem Solving | Decision Support</strong></p>
+                <h4>Career Path</h4>
+                <p><strong>Desktop Support Engineer → IT Analyst → Data Analyst → Business Intelligence Analyst → Power BI Developer → Data Analytics Specialist</strong></p>
+                <h4>Key Takeaway</h4>
+                <blockquote>
+                  The ability to transform raw data into meaningful insights is one of the most valuable skills in modern IT and business environments. SQL and Power BI bridge the gap between data and decision-making, enabling organizations to drive growth through informed actions.
+                </blockquote>
+              </template>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#" data-blog-item>
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/root.jpeg" alt="Root cause analysis in IT support" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">L2 Support • Problem Management</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026-10-20">20 October, 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Root Cause Analysis: Solving IT Issues Beyond Quick Fixes</h3>
+
+                  <p class="blog-text">
+                    Understand the importance of root cause analysis in L2 support and how long-term solutions improve system reliability and reduce recurring incidents.
+                  </p>
+
+                </div>
+
+              </a>
+              <template data-blog-details>
+                <p>
+                  Root Cause Analysis (RCA) is a structured approach used to identify the underlying cause of recurring IT issues rather than applying temporary fixes. By analyzing incidents, logs, and system behavior, IT professionals can implement permanent solutions that improve system stability and reduce downtime.
+                </p>
+                <h4>Key Areas Covered</h4>
+                <ul>
+                  <li>Incident Investigation</li>
+                  <li>Root Cause Identification</li>
+                  <li>Problem Resolution</li>
+                  <li>Preventive Actions</li>
+                  <li>Service Improvement</li>
+                </ul>
+                <h4>Skills Demonstrated</h4>
+                <p><strong>Root Cause Analysis | L2 Support | Incident Management | Troubleshooting | Problem Solving | IT Operations</strong></p>
+                <h4>Key Takeaway</h4>
+                <blockquote>
+                  Effective IT support is not just about fixing problems quickly, but understanding why they occur and preventing them from happening again.
+                </blockquote>
+              </template>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <div class="blog-modal-container" data-blog-modal-container>
+        <div class="blog-modal-overlay" data-blog-modal-overlay></div>
+        <section class="blog-modal" role="dialog" aria-modal="true" aria-labelledby="blog-modal-title">
+          <button class="modal-close-btn" type="button" aria-label="Close article" data-blog-modal-close>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <div class="blog-modal-meta">
+            <span data-blog-modal-category></span>
+            <span class="dot"></span>
+            <time data-blog-modal-date></time>
+          </div>
+          <h3 class="h3 blog-modal-title" id="blog-modal-title" data-blog-modal-title></h3>
+          <div class="blog-modal-content" data-blog-modal-content></div>
+        </section>
+      </div>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35076.35335384707!2d72.76390434784625!3d19.455759513884875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7aa23dce7efbf%3A0x99bd87871748d8f4!2sVirar%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sbd!4v1742043299927!5m2!1sen!2sbd" width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" name="submit-to-google-sheet" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <p class="form-status" data-form-status aria-live="polite"></p>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
